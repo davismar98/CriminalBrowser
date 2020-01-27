@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_buscado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="davismar98.browser.criminal.app.com.criminalbrowser.addBuscado"
+    tools:showIn="@layout/activity_add_buscado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/fotografia"
+                    android:background="@color/icons">
+
+                    <TextView
+                        android:text="Agregar una foto al buscado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RelativeLayout android:layout_width="200dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/placeholder"
+                            android:id="@+id/fotoB" />
+
+                        <CheckBox
+                            android:text="Por defecto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cbFotoDefault"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12sp"
+                            android:background="@color/secondary_text" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textWebEditText"
+                        android:ems="10"
+                        android:id="@+id/etUrl"
+                        android:layout_marginLeft="15dp"
+                        android:hint="Ingresa la URL de la imágen"
+                        android:text="http://www.criminalbrowser.com/delincuentes/h.jpg"
+                        android:textSize="12sp"
+                        android:layout_marginRight="15dp" />
+
+                    <Button
+                        android:text="cargar  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnCargar"
+                        android:drawableRight="@drawable/up"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/GeneralB"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/icons"
+                    android:paddingBottom="10dp">
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/etApellidosB"
+                        android:layout_below="@+id/etNombreB"
+                        android:layout_alignStart="@+id/etNombreB"
+                        android:hint="Ingresa los apellidos"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="Apellidos: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView34"
+                        android:layout_alignBaseline="@+id/etApellidosB"
+                        android:layout_alignBottom="@+id/etApellidosB"
+                        android:layout_alignStart="@+id/textView18"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:text="Género: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/textView375"
+                        android:layout_below="@+id/etApellidosB"
+                        android:layout_alignStart="@+id/textView34"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <Spinner
+                        android:id="@+id/spGenero"
+                        android:layout_alignTop="@+id/textView375"
+                        android:layout_alignStart="@+id/etApellidosB"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Fecha de nacimiento: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spGenero"
+                        android:layout_alignStart="@+id/textView375"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/textView379"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:text="Sin seleccionar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView379"
+                        android:layout_toEndOf="@+id/btnSelectFechaN"
+                        android:layout_marginStart="17dp"
+                        android:id="@+id/fechaNacimientoB"
+                        android:textSize="14sp" />
+
+                    <Button
+                        android:text="Selecccionar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSelectFechaN"
+                        android:textSize="10sp"
+                        android:layout_alignBaseline="@+id/textView379"
+                        android:layout_alignBottom="@+id/textView379"
+                        android:layout_toEndOf="@+id/textView379" />
+
+                    <Spinner
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spPais"
+                        android:layout_alignTop="@+id/textViewxx"
+                        android:layout_toEndOf="@+id/textView375" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/etNombreB"
+                        android:hint="Ingresa los nombres"
+                        android:textSize="14sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView18"
+                        android:layout_marginStart="13dp" />
+
+                    <TextView
+                        android:text="Nombres: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView18"
+                        android:layout_marginStart="11dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_alignBaseline="@+id/etNombreB"
+                        android:layout_alignBottom="@+id/etNombreB"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:text="Pais:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="27dp"
+                        android:id="@+id/textViewxx"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_below="@+id/btnSelectFechaN"
+                        android:layout_alignStart="@+id/textView379" />
+
+                    <CheckBox
+                        android:text="Desconocida"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/cbFechaN"
+                        android:textSize="10sp"
+                        android:layout_below="@+id/textView379"
+                        android:layout_alignStart="@+id/textView379" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons">
+
+                <SeekBar
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView38"
+                    android:layout_toEndOf="@+id/textView38"
+                    android:layout_marginStart="38dp"
+                    android:id="@+id/seekBarEstatura"
+                    android:layout_width="150dp" />
+
+                <TextView
+                    android:text="Estatura:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/textView38"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:text="100 cm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/estaturaB"
+                    android:layout_alignTop="@+id/seekBarEstatura"
+                    android:layout_toEndOf="@+id/seekBarEstatura"
+                    android:layout_marginStart="19dp" />
+
+                <TextView
+                    android:text="Raza: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/textView41"
+                    android:layout_below="@+id/seekBarEstatura"
+                    android:layout_alignStart="@+id/textView38" />
+
+                <Spinner
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spRaza"
+                    android:layout_alignTop="@+id/textView41"
+                    android:layout_toEndOf="@+id/textView38" />
+
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spOjos"
+                    android:layout_alignTop="@+id/TextView435"
+                    android:layout_alignStart="@+id/seekBarEstatura"
+                    android:layout_marginStart="7dp"
+                    android:layout_width="160dp" />
+
+                <TextView
+                    android:text="Alias: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/textView48"
+                    android:layout_below="@+id/spCabStyle"
+                    android:layout_alignEnd="@+id/textView41" />
+
+                <CheckBox
+                    android:text="Ninguna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView49"
+                    android:layout_alignStart="@+id/textView48"
+                    android:id="@+id/cbPeculiaridad"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:text="Ojos (color):"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/TextView435"
+                    android:layout_below="@+id/spRaza"
+                    android:layout_alignStart="@+id/textView41" />
+
+                <TextView
+                    android:text="Cabello: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:id="@+id/textView45"
+                    android:layout_below="@+id/spOjos"
+                    android:layout_alignStart="@+id/TextView435" />
+
+                <TextView
+                    android:text="Estilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView46"
+                    android:textSize="12sp"
+                    android:layout_alignTop="@+id/textView45"
+                    android:layout_alignStart="@+id/spOjos" />
+
+                <TextView
+                    android:text="Color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView47"
+                    android:textSize="12sp"
+                    android:layout_above="@+id/spCabStyle"
+                    android:layout_toEndOf="@+id/seekBarEstatura" />
+
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spCabStyle"
+                    android:layout_marginStart="7dp"
+                    android:layout_width="120dp"
+                    android:layout_below="@+id/textView46"
+                    android:layout_alignStart="@+id/spRaza" />
+
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spCabColor"
+                    android:layout_width="120dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_below="@+id/textView47"
+                    android:layout_toEndOf="@+id/spCabStyle" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/etAlias"
+                    android:hint="Ingrese el alias"
+                    android:textSize="14sp"
+                    android:layout_alignBaseline="@+id/textView48"
+                    android:layout_alignBottom="@+id/textView48"
+                    android:layout_alignStart="@+id/spRaza" />
+
+                <CheckBox
+                    android:text="No tiene"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbAlias"
+                    android:textSize="12sp"
+                    android:layout_alignBaseline="@+id/etAlias"
+                    android:layout_alignBottom="@+id/etAlias"
+                    android:layout_alignEnd="@+id/estaturaB" />
+
+                <EditText
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/peculiaridadB"
+                    android:hint="Algun rasgo que ayude a identificarlo..."
+                    android:textSize="14sp"
+                    android:layout_below="@+id/etAlias"
+                    android:layout_alignStart="@+id/textView46"
+                    android:layout_marginTop="18dp" />
+
+                <TextView
+                    android:text="Peculiaridad:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView49"
+                    android:layout_alignTop="@+id/peculiaridadB"
+                    android:layout_alignStart="@+id/cbPeculiaridad" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:text="$0 (COP)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recompensaB"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/cbRecompensa"
+                    android:layout_centerHorizontal="true" />
+
+                <SeekBar
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBarRecompensa"
+                    android:layout_below="@+id/recompensaB"
+                    android:layout_centerHorizontal="true" />
+
+                <CheckBox
+                    android:text="Recompensa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cbRecompensa"
+                    android:checked="true"
+                    android:textSize="12sp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Layout_Delitos"
+                android:background="@color/icons"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:text="Agregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addDelito"
+                    android:textSize="10sp"
+                    android:layout_below="@+id/spDelitos"
+                    android:layout_alignStart="@+id/spDelitos" />
+
+                <TextView
+                    android:text="Delitos: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView32"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/spDelitos"
+                    android:layout_width="250dp"
+                    android:layout_alignBottom="@+id/textView32"
+                    android:layout_toEndOf="@+id/textView32" />
+
+                <TextView
+                    android:text="0 delitos agregados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/delitosE"
+                    android:layout_alignBaseline="@+id/addDelito"
+                    android:layout_alignBottom="@+id/addDelito"
+                    android:layout_alignEnd="@+id/spDelitos"
+                    android:layout_marginEnd="17dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/icons"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:text=" Agregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/btnAddBuscado"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/add_b_mini"
+                    android:layout_marginBottom="18dp"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

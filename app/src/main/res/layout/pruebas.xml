@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EspecE"
+        android:layout_marginTop="10dp"
+        android:background="@color/icons"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:text="Ojos:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView36"
+            android:layout_marginTop="23dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView39"
+            android:layout_alignStart="@+id/textView39" />
+
+        <TextView
+            android:text="Estatura:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewxx2"
+            android:layout_marginTop="22dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView33"
+            android:layout_alignStart="@+id/textView33" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aliasB"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_alignBaseline="@+id/carcel"
+            android:layout_alignBottom="@+id/carcel"
+            android:layout_toEndOf="@+id/carcel"
+            android:layout_marginStart="11dp" />
+
+        <TextView
+            android:text="Alias:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/carcel"
+            android:layout_marginStart="21dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Raza: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/carcel"
+            android:layout_alignStart="@+id/carcel" />
+
+        <TextView
+            android:text="Americano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raza"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_alignBaseline="@+id/textView33"
+            android:layout_alignBottom="@+id/textView33"
+            android:layout_toEndOf="@+id/textViewxx2" />
+
+        <TextView
+            android:text="180 cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fechaIngreso"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_marginStart="19dp"
+            android:layout_alignBaseline="@+id/textViewxx2"
+            android:layout_alignBottom="@+id/textViewxx2"
+            android:layout_toEndOf="@+id/textViewxx2" />
+
+        <TextView
+            android:text="Cabello: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView39"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/textViewxx2"
+            android:layout_alignStart="@+id/textViewxx2" />
+
+        <TextView
+            android:text="Liso azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/visitas"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_alignBaseline="@+id/textView39"
+            android:layout_alignBottom="@+id/textView39"
+            android:layout_alignStart="@+id/fechaIngreso" />
+
+        <TextView
+            android:text="verdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView36"
+            android:layout_toEndOf="@+id/textView39"
+            android:id="@+id/ojos"
+            android:textSize="18sp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:text="Peculiaridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/textView17"
+            android:layout_below="@+id/textView36"
+            android:layout_alignStart="@+id/textView36"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:text="Recompensa:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/recomp"
+            android:layout_alignBottom="@+id/recomp"
+            android:layout_alignStart="@+id/textView17" />
+
+        <TextView
+            android:text="$100000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recomp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/peculiaridad"
+            android:layout_alignStart="@+id/peculiaridad" />
+
+        <TextView
+            android:text="mancajsfdsf g dfsfsdfsfsdfsdfsdf sd f d"
+            android:layout_height="wrap_content"
+            android:id="@+id/peculiaridad"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_width="200dp"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_toEndOf="@+id/ojos" />
+
+    </RelativeLayout>
+-->
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EspecE"
+        android:layout_marginTop="10dp"
+        android:background="@color/icons"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:text="Ojos:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView36"
+            android:layout_marginTop="23dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView39"
+            android:layout_alignStart="@+id/textView39" />
+
+        <TextView
+            android:text="Estatura:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewxx2"
+            android:layout_marginTop="22dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView33"
+            android:layout_alignStart="@+id/textView33" />
+
+        <TextView
+            android:text="Americano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/raza"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_alignBaseline="@+id/textView33"
+            android:layout_alignBottom="@+id/textView33"
+            android:layout_toEndOf="@+id/textViewxx2" />
+
+        <TextView
+            android:text="180 cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/estatura"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_marginStart="19dp"
+            android:layout_alignBaseline="@+id/textViewxx2"
+            android:layout_alignBottom="@+id/textViewxx2"
+            android:layout_toEndOf="@+id/textViewxx2" />
+
+        <TextView
+            android:text="Cabello: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView39"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/textViewxx2"
+            android:layout_alignStart="@+id/textViewxx2" />
+
+        <TextView
+            android:text="verdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView36"
+            android:layout_toEndOf="@+id/textView39"
+            android:id="@+id/ojos"
+            android:textSize="18sp"
+            android:textStyle="normal|italic" />
+
+        <TextView
+            android:text="Peculiaridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:id="@+id/textView17"
+            android:layout_below="@+id/textView36"
+            android:layout_alignStart="@+id/textView36"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:text="Recompensa:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold"
+            android:layout_alignBaseline="@+id/recomp"
+            android:layout_alignBottom="@+id/recomp"
+            android:layout_alignStart="@+id/textView17" />
+
+        <TextView
+            android:text="$100000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recomp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold|italic"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/peculiaridad"
+            android:layout_alignStart="@+id/peculiaridad" />
+
+        <TextView
+            android:text="mancajsfdsf g dfsfsdfsfsdfsdfsdf sd f d"
+            android:layout_height="wrap_content"
+            android:id="@+id/peculiaridad"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_width="200dp"
+            android:layout_alignBaseline="@+id/textView17"
+            android:layout_alignBottom="@+id/textView17"
+            android:layout_toEndOf="@+id/ojos" />
+
+        <TextView
+            android:text="Liso azul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cabello"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:layout_alignBaseline="@+id/textView39"
+            android:layout_alignBottom="@+id/textView39"
+            android:layout_alignStart="@+id/estatura" />
+
+        <TextView
+            android:text="Raza: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView33"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/TextView444"
+            android:layout_alignStart="@+id/TextView444" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aliasB"
+            android:textSize="18sp"
+            android:textStyle="normal|italic"
+            android:text="alias buscado "
+            android:layout_alignBaseline="@+id/TextView444"
+            android:layout_alignBottom="@+id/TextView444"
+            android:layout_toEndOf="@+id/textView39" />
+
+        <TextView
+            android:text="Alias:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="13dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/TextView444"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+-->
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/icons"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/Datos personales" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_below="@+id/Datos personales"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/userName"
+            android:textSize="14sp"
+            android:hint="Ingresa tu nombre " />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/userApellidos"
+            android:textSize="14sp"
+            android:layout_below="@+id/userName"
+            android:layout_alignStart="@+id/userName"
+            android:hint="Ingresa tus apellidos" />
+
+        <TextView
+            android:text="Apellidos:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:layout_alignBaseline="@+id/userApellidos"
+            android:layout_alignBottom="@+id/userApellidos"
+            android:layout_alignStart="@+id/textView14" />
+
+        <TextView
+            android:text="ID:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+            android:layout_alignBaseline="@+id/userID"
+            android:layout_alignBottom="@+id/userID"
+            android:layout_alignEnd="@+id/textView15" />
+
+        <TextView
+            android:text="Teléfono:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:layout_alignBaseline="@+id/userPhone"
+            android:layout_alignBottom="@+id/userPhone"
+            android:layout_alignStart="@+id/textView15" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/userID"
+            android:hint="Número de identidad"
+            android:textSize="14sp"
+            android:layout_below="@+id/userApellidos"
+            android:layout_alignStart="@+id/userApellidos" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:id="@+id/userPhone"
+            android:textSize="14sp"
+            android:hint="Número de teléfono"
+            android:layout_below="@+id/userID"
+            android:layout_alignStart="@+id/userID" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/userEmail"
+            android:textSize="14sp"
+            android:hint="Correo electrónico"
+            android:layout_below="@+id/userPhone"
+            android:layout_alignStart="@+id/userPhone" />
+
+        <TextView
+            android:text="Correo:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:layout_alignBaseline="@+id/userEmail"
+            android:layout_alignBottom="@+id/userEmail"
+            android:layout_alignEnd="@+id/textView27" />
+
+        <TextView
+            android:text="Nombres: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_alignBaseline="@+id/userName"
+            android:layout_alignBottom="@+id/userName"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>-->
+<!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="15dp"
+        android:paddingLeft="5dp"
+        android:background="@color/icons">
+
+        <TextView
+            android:text="Organismo encargado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/txtorganismo"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:text="Nombre del organifsdfdsfsdfsdfsfsdfdsfsdfsdfsmo si es"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/organismoNombre"
+            android:layout_alignBaseline="@+id/TextView123"
+            android:layout_alignBottom="@+id/TextView123"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_marginStart="15dp" />
+
+        <TextView
+            android:text="telefono del organismo "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/organismoTel"
+            android:layout_alignBaseline="@+id/textView5"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_alignStart="@+id/organismoCorreo" />
+
+        <TextView
+            android:text="Direccion del organismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/organismoDir"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_alignStart="@+id/organismoTel" />
+
+        <TextView
+            android:text="Dirección:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Nombre: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/TextView123"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/txtorganismo"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="Teléfono: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView5"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="correo del organismo "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/organismoCorreo"
+            android:layout_above="@+id/textView5"
+            android:layout_alignStart="@+id/organismoNombre" />
+
+        <TextView
+            android:text="Correo: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/organismoNombre"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_marginTop="12dp" />
+    </RelativeLayout>
+-->
+<!--
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/thumbImage2"
+            android:minLines="2"
+            android:paddingTop="5dp"
+            android:textStyle="bold"
+            android:text="David E Martínez"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="32"
+            android:layout_alignBaseline="@+id/pais"
+            android:layout_alignBottom="@+id/pais"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/genero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hombre"
+            android:layout_alignBaseline="@+id/nombre"
+            android:layout_alignBottom="@+id/nombre"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/pais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colombia"
+            android:layout_below="@+id/nombre"
+            android:layout_toEndOf="@+id/bandera" />
+
+        <ImageView
+            android:id="@+id/thumbImage2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/placeholder"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            app:srcCompat="@drawable/global"
+            android:id="@+id/bandera"
+            android:layout_marginRight="7dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/pais"
+            android:layout_toEndOf="@+id/thumbImage2" />
+
+    </RelativeLayout>
+-->
+<!--
+    <RelativeLayout
+        android:background="@color/icons"
+        android:layout_width="270dp"
+        android:layout_height="300dp">
+
+        <TextView
+            android:text="Ingresa tus datos a continuación..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/etContraseña"
+            android:layout_below="@+id/etUsername"
+            android:layout_alignStart="@+id/etUsername"
+            android:layout_marginTop="18dp"
+            android:hint="CONTRASEÑA"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etUsername"
+            android:layout_marginTop="34dp"
+            android:hint="USERNAME"
+            android:layout_below="@+id/textView25"
+            android:layout_alignStart="@+id/textView25"
+            android:gravity="center_vertical|center_horizontal" />
+
+        <Button
+            android:text="Iniciar sesión"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorText"
+            android:textSize="24sp"
+            android:layout_below="@+id/etContraseña"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="50dp" />
+
+    </RelativeLayout>
+-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            app:srcCompat="@drawable/placeholder"
+            android:id="@+id/bandera"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:text="5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delito"
+            android:layout_toEndOf="@+id/textView7"
+            android:id="@+id/coincidencias"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pais"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/bandera" />
+
+        <TextView
+            android:text="juegos ilegales por dinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/delito"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="Coincidencias: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:paddingLeft="15dp"
+            android:layout_below="@+id/delito"
+            android:layout_alignStart="@+id/delito" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

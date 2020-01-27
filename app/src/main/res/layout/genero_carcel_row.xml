@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:background="@color/primary_light"
+    android:layout_marginTop="6dp">
+
+    <TextView
+        android:text="Cárcel no sé qué mierdas con un nombre bastante "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/carcel"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView4"
+        android:id="@+id/hombres"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        app:srcCompat="@drawable/male"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/carcel"
+        android:layout_alignParentStart="true"
+        android:layout_width="27dp"
+        android:layout_height="27dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/intersex"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/carcel"
+        android:layout_toStartOf="@+id/indefinido" />
+
+    <TextView
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indefinido"
+        android:layout_alignBaseline="@+id/hombres"
+        android:layout_alignBottom="@+id/hombres"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/indefinido"
+        android:layout_toEndOf="@+id/imageView7"
+        android:id="@+id/mujeres"
+        android:textSize="18sp"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/female"
+        android:layout_marginStart="69dp"
+        android:id="@+id/imageView7"
+        android:layout_below="@+id/carcel"
+        android:layout_toEndOf="@+id/hombres" />
+
+</RelativeLayout>

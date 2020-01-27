@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_add_encarcelado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="davismar98.browser.criminal.app.com.criminalbrowser.addEncarcelado"
+    tools:showIn="@layout/activity_add_encarcelado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:gravity="center_horizontal"
+                    android:id="@+id/fotografia"
+                    android:background="@color/icons">
+
+                    <TextView
+                        android:text="Agregar una foto al buscado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView23"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RelativeLayout android:layout_width="200dp"
+                        android:layout_height="120dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:srcCompat="@drawable/placeholder"
+                            android:id="@+id/fotoE" />
+
+                        <CheckBox
+                            android:text="Por defecto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/cbFotoDefault"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="12sp"
+                            android:background="@color/secondary_text" />
+                    </RelativeLayout>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textWebEditText"
+                        android:ems="10"
+                        android:id="@+id/etUrl"
+                        android:layout_marginLeft="15dp"
+                        android:hint="Ingresa la URL de la imágen"
+                        android:text="http://www.criminalbrowser.com/delincuentes/h.jpg"
+                        android:textSize="12sp"
+                        android:layout_marginRight="15dp" />
+
+                    <Button
+                        android:text="cargar  "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnCargar"
+                        android:drawableRight="@drawable/up"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/GeneralE"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/icons"
+                    android:paddingBottom="10dp">
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/etApellidosE"
+                        android:layout_below="@+id/etNombreE"
+                        android:layout_alignStart="@+id/etNombreE"
+                        android:hint="Ingresa los apellidos"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="Apellidos: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView34"
+                        android:layout_alignBaseline="@+id/etApellidosE"
+                        android:layout_alignBottom="@+id/etApellidosE"
+                        android:layout_alignStart="@+id/textView18" />
+
+                    <TextView
+                        android:text="Género: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/textView375"
+                        android:layout_below="@+id/etApellidosE"
+                        android:layout_alignStart="@+id/textView34" />
+
+                    <Spinner
+                        android:id="@+id/spGenero"
+                        android:layout_alignTop="@+id/textView375"
+                        android:layout_alignStart="@+id/etApellidosE"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Fecha de nacimiento: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/spGenero"
+                        android:layout_alignStart="@+id/textView375"
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/textView379" />
+
+                    <TextView
+                        android:text="Sin seleccionar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/textView379"
+                        android:layout_toEndOf="@+id/btnSelectFechaN"
+                        android:layout_marginStart="17dp"
+                        android:id="@+id/fechaNacimientoE"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:text="Pais:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="11dp"
+                        android:id="@+id/textViewxx"
+                        android:layout_below="@+id/btnSelectFechaN"
+                        android:layout_alignStart="@+id/textView379" />
+
+                    <TextView
+                        android:text="Nombres: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView18"
+                        android:layout_marginStart="12dp"
+                        android:layout_alignBaseline="@+id/etNombreE"
+                        android:layout_alignBottom="@+id/etNombreE"
+                        android:layout_alignParentStart="true" />
+
+                    <Button
+                        android:text="Selecccionar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSelectFechaN"
+                        android:textSize="10sp"
+                        android:layout_alignBaseline="@+id/textView379"
+                        android:layout_alignBottom="@+id/textView379"
+                        android:layout_toEndOf="@+id/textView379" />
+
+                    <Spinner
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spPais"
+                        android:layout_alignTop="@+id/textViewxx"
+                        android:layout_toEndOf="@+id/textView375" />
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/etNombreE"
+                        android:hint="Ingresa los nombres"
+                        android:textSize="14sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView18"
+                        android:layout_marginStart="13dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/EspecE"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:text="Fecha Ingreso: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spCarcel"
+                    android:layout_alignStart="@+id/TextView555"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/textView39" />
+
+                <Button
+                    android:text="Selecccionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSelectFechaIng"
+                    android:textSize="10sp"
+                    android:layout_alignBaseline="@+id/textView39"
+                    android:layout_alignBottom="@+id/textView39"
+                    android:layout_toEndOf="@+id/textView39"
+                    android:layout_marginStart="31dp" />
+
+                <TextView
+                    android:text="Sin seleccionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView39"
+                    android:layout_toEndOf="@+id/btnSelectFechaIng"
+                    android:layout_marginStart="17dp"
+                    android:id="@+id/fechaIngresoE"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="0 años"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condenaE"
+                    android:layout_alignTop="@+id/seekBarCondena"
+                    android:layout_toEndOf="@+id/seekBarCondena"
+                    android:layout_marginStart="15dp" />
+
+                <TextView
+                    android:text="Número de registro: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/textView33"
+                    android:layout_below="@+id/btnSelectFechaIng"
+                    android:layout_alignStart="@+id/textView39" />
+
+                <SeekBar
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBarCondena"
+                    android:layout_width="200dp"
+                    android:layout_alignTop="@+id/textViewxx2"
+                    android:layout_centerHorizontal="true" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:layout_below="@+id/btnSelectFechaIng"
+                    android:layout_toEndOf="@+id/textView33"
+                    android:layout_marginStart="23dp"
+                    android:id="@+id/nRegE"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="Condena: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/textViewxx2"
+                    android:layout_below="@+id/nRegE"
+                    android:layout_alignStart="@+id/textView33" />
+
+                <SeekBar
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView36"
+                    android:layout_toEndOf="@+id/textView33"
+                    android:id="@+id/seekBarVisitas"
+                    android:layout_width="120dp" />
+
+                <TextView
+                    android:text="0 al año"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/seekBarVisitas"
+                    android:layout_alignEnd="@+id/fechaIngresoE"
+                    android:id="@+id/visitasE" />
+
+                <TextView
+                    android:text="Número de visitas: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:id="@+id/textView36"
+                    android:layout_below="@+id/seekBarCondena"
+                    android:layout_alignStart="@+id/textViewxx2" />
+
+                <TextView
+                    android:text="Cárcel:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:id="@+id/TextView555"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp" />
+
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spCarcel"
+                    android:layout_width="220dp"
+                    android:layout_alignTop="@+id/TextView555"
+                    android:layout_toEndOf="@+id/textViewxx2"
+                    android:layout_marginStart="7dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/Layout_Delitos"
+                android:background="@color/icons"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:text="Agregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/addDelito"
+                    android:textSize="10sp"
+                    android:layout_below="@+id/spDelitos"
+                    android:layout_alignStart="@+id/spDelitos" />
+
+                <TextView
+                    android:text="Delitos: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView32"
+                    android:layout_marginStart="11dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <Spinner
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/spDelitos"
+                    android:layout_width="250dp"
+                    android:layout_alignBottom="@+id/textView32"
+                    android:layout_toEndOf="@+id/textView32" />
+
+                <TextView
+                    android:text="0 delitos agregados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/delitosE"
+                    android:layout_alignBaseline="@+id/addDelito"
+                    android:layout_alignBottom="@+id/addDelito"
+                    android:layout_alignEnd="@+id/spDelitos"
+                    android:layout_marginEnd="17dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/icons"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:text=" Agregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:id="@+id/btnAddEncarcelado"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:drawableLeft="@drawable/add_e_mini"
+                    android:layout_marginBottom="18dp"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

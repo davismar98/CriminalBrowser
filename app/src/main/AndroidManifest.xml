@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="davismar98.browser.criminal.app.com.criminalbrowser">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <android:uses-permission android:name="android.permission.READ_CALL_LOG" />
+
+    <!-- Required to act as a custom watch face. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DetailBuscado"
+            android:label="@string/title_activity_detail" />
+        <activity
+            android:name=".DetailEncarcelado"
+            android:label="@string/title_activity_detail" />
+        <activity
+            android:name=".verBuscados"
+            android:label="@string/title_activity_show_all">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".verEncarcelados"
+            android:label="@string/title_activity_show_encarcelados">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".selectType"
+            android:label="@string/title_activity_SelectType" />
+        <activity android:name=".denunciar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/action_sign_in" />
+        <activity
+            android:name=".adminActivity"
+            android:label="@string/title_activity_admin"
+            android:parentActivityName=".Start"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="davismar98.browser.criminal.app.com.criminalbrowser.Start" />
+        </activity>
+        <activity
+            android:name=".addEncarcelado"
+            android:label="@string/title_activity_add_encarcelado"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+                <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="davismar98.browser.criminal.app.com.criminalbrowser.adminActivity" />
+            -->
+        </activity>
+        <activity
+            android:name=".addBuscado"
+            android:label="@string/title_activity_add_buscado"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+                <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="davismar98.browser.criminal.app.com.criminalbrowser.adminActivity" />
+            -->
+        </activity>
+        <activity
+            android:name=".updateEncarcelado"
+            android:label="@string/title_activity_update_encarcelado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".updateBuscado"
+            android:label="@string/title_activity_update_buscado"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BuscadoDetail"
+            android:label="@string/title_activity_buscado_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".visitaActivity"
+            android:label="@string/title_activity_visita"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".denunciaActivity"
+            android:label="@string/title_activity_denuncia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verVisitas"
+            android:label="@string/title_activity_ver_visitas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verDenuncias"
+            android:label="@string/title_activity_ver_denuncias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".verGenerosCarcel"
+            android:label="@string/title_activity_ver_generos_carcel" />
+        <activity
+            android:name=".verBuscadosPais"
+            android:label="@string/title_activity_ver_buscados_pais" />
+        <activity android:name=".verDelitoPais"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    tools:context="davismar98.browser.criminal.app.com.criminalbrowser.DetailBuscado"
+    android:padding="0dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.7"
+                android:gravity="center"
+                android:layout_height="270dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/image"
+                    android:background="@drawable/placeholder"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/registro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reg N° 3456i5 "
+                    style="@style/title"
+                    android:layout_alignTop="@+id/image"
+                    android:background="@color/colorPrimaryDark"
+                    android:alpha="0.9"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:padding="2dp"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="David Esteban Martínez "
+                    style="@style/title"
+                    android:background="@color/colorPrimaryDark"
+                    android:alpha="0.9"
+                    android:layout_gravity="bottom"
+                    android:padding="2dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_weight="0.7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/GeneralE"
+                    android:layout_weight="1"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/icons"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="Pais:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewxx"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:layout_marginTop="18dp"
+                        android:layout_below="@+id/textView379"
+                        android:layout_alignStart="@+id/textView379"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="masculino"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/genero"
+                        android:layout_alignBottom="@+id/textView375"
+                        android:layout_toEndOf="@+id/textView34"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic" />
+
+                    <TextView
+                        android:text="Nombres: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView18"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="12dp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="Fecha de nacimiento: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="19dp"
+                        android:id="@+id/textView379"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:layout_below="@+id/genero"
+                        android:layout_alignStart="@+id/textView375" />
+
+                    <TextView
+                        android:text="Género: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView375"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:layout_marginTop="18dp"
+                        android:textStyle="normal|bold"
+                        android:layout_below="@+id/textView34"
+                        android:layout_alignStart="@+id/textView34" />
+
+                    <TextView
+                        android:text="1998/12/02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView379"
+                        android:layout_toEndOf="@+id/textView379"
+                        android:layout_marginStart="27dp"
+                        android:id="@+id/fechaN"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic" />
+
+                    <TextView
+                        android:text="Apellidos: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView34"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp"
+                        android:layout_marginTop="17dp"
+                        android:textStyle="normal|bold"
+                        android:layout_below="@+id/textView18"
+                        android:layout_alignStart="@+id/textView18" />
+
+                    <TextView
+                        android:text="Martínez Pulido fdf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/apellido"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic"
+                        android:layout_alignBaseline="@+id/textView34"
+                        android:layout_alignBottom="@+id/textView34"
+                        android:layout_alignStart="@+id/delito" />
+
+                    <TextView
+                        android:text="David Esteban"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/delito"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic"
+                        android:layout_above="@+id/textView34"
+                        android:layout_toEndOf="@+id/textView34"
+                        android:layout_marginStart="22dp" />
+
+                    <TextView
+                        android:text="(12 años)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edad"
+                        android:layout_below="@+id/fechaN"
+                        android:layout_alignEnd="@+id/fechaN" />
+
+                    <ImageView
+                        app:srcCompat="@drawable/colombia"
+                        android:id="@+id/bandera"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/edad"
+                        android:layout_toEndOf="@+id/textView375" />
+
+                    <TextView
+                        android:text="Colombia "
+                        android:layout_width="wrap_content"
+                        android:id="@+id/pais"
+                        android:textStyle="normal|italic"
+                        android:textSize="18sp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toEndOf="@+id/bandera"
+                        android:layout_marginStart="16dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EspecE"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/icons"
+                    android:paddingBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="Cárcel:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:id="@+id/TextView555"
+                        android:layout_marginStart="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:text="Número de visitas: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView36"
+                        android:layout_marginTop="23dp"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_below="@+id/textView39"
+                        android:layout_alignStart="@+id/textView39" />
+
+                    <TextView
+                        android:text="Condena: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewxx2"
+                        android:layout_marginTop="22dp"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_below="@+id/textView33"
+                        android:layout_alignStart="@+id/textView33" />
+
+                    <TextView
+                        android:text="4 al año"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView36"
+                        android:layout_alignEnd="@+id/fechaIngreso"
+                        android:id="@+id/visitas"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic" />
+
+                    <TextView
+                        android:text="hola "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/carcel"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic"
+                        android:layout_alignBaseline="@+id/TextView555"
+                        android:layout_alignBottom="@+id/TextView555"
+                        android:layout_toEndOf="@+id/textViewxx2" />
+
+                    <TextView
+                        android:text="Fecha Ingreso: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView39"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="21dp"
+                        android:layout_below="@+id/textViewxx2"
+                        android:layout_alignStart="@+id/textViewxx2" />
+
+                    <TextView
+                        android:text="100 años"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/condena"
+                        android:textSize="18sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignEnd="@+id/textView33" />
+
+                    <TextView
+                        android:text="2016/21/12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fechaIngreso"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic"
+                        android:layout_above="@+id/textView36"
+                        android:layout_toEndOf="@+id/textView39"
+                        android:layout_marginStart="18dp" />
+
+                    <TextView
+                        android:text="1234565"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/nReg"
+                        android:textSize="18sp"
+                        android:textStyle="normal|italic"
+                        android:layout_marginStart="11dp"
+                        android:layout_alignBaseline="@+id/textView33"
+                        android:layout_alignBottom="@+id/textView33"
+                        android:layout_alignStart="@+id/visitas" />
+
+                    <TextView
+                        android:text="Número de registro: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView33"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginTop="19dp"
+                        android:layout_below="@+id/TextView555"
+                        android:layout_alignStart="@+id/TextView555" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Layout_Delitos"
+                    android:background="@color/icons"
+                    android:layout_marginTop="10dp"
+                    android:paddingBottom="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="Delitos: "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView32"
+                        android:layout_marginStart="20dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_alignBaseline="@+id/btnVerDelitos"
+                        android:layout_alignBottom="@+id/btnVerDelitos"
+                        android:layout_alignParentStart="true"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:text="Haga click para ver los delitos "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnVerDelitos"
+                        android:textSize="12sp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/textView32" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/icons"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <Button
+                        android:text="Visitar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="18dp"
+                        android:id="@+id/btnVisitar"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="18dp"
+                        android:textSize="36sp"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/colorText" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

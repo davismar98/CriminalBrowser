@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Criminal Browser</string>
+
+
+    <string name="title_activity_detail">Detail</string>
+    <string name="title_activity_login">Iniciar Sesión</string>
+    <string name="title_activity_show_all">Buscados</string>
+    <string name="title_activity_show_encarcelados">Encarcelados</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_detail_v2">Detail_v2</string>
+    <string name="prompt">Seleccionar País</string>
+    <string name="title_activity_admin">Administrador</string>
+    <string name="title_activity_add_encarcelado">Agregar Encarcelado</string>
+    <string name="title_activity_add_buscado">Agregar Buscado</string>
+    <string name="title_activity_update_encarcelado">Actualizar Encarcelado</string>
+    <string name="title_activity_update_buscado">Actualizar Buscado</string>
+    <string name="title_activity_buscado_detail">BuscadoDetail</string>
+    <string name="title_activity_SelectType">Seleccionar Tipo</string>
+    <string name="title_activity_visita">Hacer visita</string>
+    <string name="title_activity_denuncia">denunciaActivity</string>
+    <string name="title_activity_ver_visitas">Ver visitas</string>
+    <string name="title_activity_ver_denuncias">Ver denuncias</string>
+    <string name="title_activity_ver_generos_carcel">Géneros por cárcel</string>
+    <string name="title_activity_ver_buscados_pais">Más Buscados</string>
+</resources>

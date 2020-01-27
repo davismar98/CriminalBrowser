@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="davismar98.mysql.php.app.com.phpmysql1.ListActivity">
+    <item
+        android:id="@+id/menuUpdate"
+        android:orderInCategory="1"
+        android:title="Actualizar"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menuRemove"
+        android:orderInCategory="2"
+        android:title="Eliminar"
+        app:showAsAction="never" />
+</menu>
